@@ -1,0 +1,310 @@
+ <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarPing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarPosting"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="@dimen/toolbar_elevation"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:subtitle="@string/accounting"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+
+            android:id="@+id/scrollViewPing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/cardview_content_padding">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/cardview_corner_radius"
+                    card_view:cardElevation="@dimen/cardview_elevation"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="@dimen/cardview_content_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/viewPing1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/titlePosting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/posting_title"
+                                android:maxLines="1"
+                                android:scrollbarStyle="outsideInset"
+                                android:scrollbars="vertical"
+                                android:text="@string/posting_title" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view1"
+                    card_view:cardCornerRadius="@dimen/cardview_corner_radius"
+                    card_view:cardElevation="@dimen/cardview_elevation"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="@dimen/cardview_content_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/viewPing2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/slugPosting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/posting_slug"
+                                android:maxLines="2"
+                                android:scrollbarStyle="outsideInset"
+                                android:scrollbars="vertical"
+                                android:text="@string/posting_slug" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view2"
+                    card_view:cardCornerRadius="@dimen/cardview_corner_radius"
+                    card_view:cardElevation="@dimen/cardview_elevation"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="@dimen/cardview_content_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/text_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="true">
+
+                            <EditText
+                                android:id="@+id/contentPosting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:fadeScrollbars="false"
+                                android:gravity="start"
+                                android:hint="@string/posting_content"
+                                android:inputType="textMultiLine"
+                                android:lines="3"
+                                android:minLines="3"
+                                android:scrollbarStyle="outsideInset"
+                                android:scrollbars="vertical"
+                                android:text="@string/posting_content" />
+
+                            <TextView
+                                android:id="@+id/text_countPing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:paddingLeft="5dp"
+                                android:text="0"
+                                android:textColor="@color/ColorField" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/editContPing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text_input_layout"
+                            android:layout_margin="6dp"
+                            card_view:cardBackgroundColor="@color/ColorPrimary"
+                            card_view:cardCornerRadius="@dimen/cardview_corner_radius_button"
+                            card_view:cardElevation="@dimen/cardview_elevation_button">
+
+                            <TextView
+                                android:id="@+id/contEditButtonPosting"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:paddingBottom="8.5dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:paddingTop="8.5dp"
+                                android:text="@string/posting_edit_button"
+                                android:textColor="#ffffffff" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/excerpt_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editContPing"
+                            android:focusableInTouchMode="true">
+
+                            <EditText
+                                android:id="@+id/excerptPosting"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:fadeScrollbars="false"
+                                android:gravity="left|top"
+                                android:hint="@string/posting_excerpt"
+                                android:inputType="textMultiLine"
+                                android:lines="3"
+                                android:minLines="3"
+                                android:scrollbarStyle="outsideInset"
+                                android:scrollbars="vertical"
+                                android:text="@string/posting_excerpt" />
+
+                            <TextView
+                                android:id="@+id/excerpt_countPing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:paddingLeft="5dp"
+                                android:text="0"
+                                android:textColor="@color/ColorField" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/editExcPing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/excerpt_input_layout"
+                            android:layout_margin="6dp"
+                            card_view:cardBackgroundColor="@color/ColorPrimary"
+                            card_view:cardCornerRadius="@dimen/cardview_corner_radius_button"
+                            card_view:cardElevation="@dimen/cardview_elevation_button">
+
+                            <TextView
+                                android:id="@+id/excerptEditButtonPosting"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:paddingBottom="8.5dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:paddingTop="8.5dp"
+                                android:text="@string/posting_edit_button"
+                                android:textColor="#ffffffff" />
+
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view3"
+                    card_view:cardCornerRadius="@dimen/cardview_corner_radius"
+                    card_view:cardElevation="@dimen/cardview_elevation"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:contentPadding="@dimen/cardview_content_padding">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:entries="@array/statuses"
+                            android:spinnerMode="dropdown"
+                            android:id="@+id/statusSpinner"
+                            android:prompt="@string/status_prompt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"/>
+
+                        <CheckBox
+                            android:layout_below="@+id/statusSpinner"
+                            android:id="@+id/commentsPosting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:checked="true"
+                            android:text="@string/posting_comments"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/pingsPosting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/commentsPosting"
+                            android:checked="true"
+                            android:text="@string/posting_pings"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/stickyPosting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/pingsPosting"
+                            android:checked="false"
+                            android:text="@string/posting_sticky"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/card_view4"></RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabConnectPosting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="@dimen/fab_elevation"
+            android:src="@drawable/ic_check_white_24dp"
+            app:backgroundTint="@color/ColorPrimary" />
+
+    </android.support.design.widget.CoordinatorLayout>

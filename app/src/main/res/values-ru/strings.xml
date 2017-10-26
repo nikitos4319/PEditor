@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Post Editor</string>
+
+    <string name="title_activity_activity_accounting">ActivityAccounting</string>
+    <string name="title_activity_activity_posts">ActivityPosts</string>
+    <string name="title_activity_activity_posting">ActivityPosting</string>
+
+    <string name="accounts">Подключения</string>
+    <string name="accounting">Подключение</string>
+    <string name="post_editor">Post Editor</string>
+    <string name="posts">Статьи</string>
+    <string name="posting">Публикаця</string>
+    <string name="code_editor">Редактор кода</string>
+
+    <string name="connaction_name">Имя подключения</string>
+    <string name="connaction_url">URL подключения</string>
+    <string name="connaction_load_posts">Загрузить статьи</string>
+    <string name="connaction_load_pages">Загрузить страницы</string>
+    <string name="connaction_other_settings">Другие настройки (опционально) </string>
+    <string name="connaction_login">Логин</string>
+    <string name="connaction_password">Пароль</string>
+    <string name="connaction_show_pwd">Показать</string>
+    <string name="connaction_use_auth">Использовать идентификацию</string>
+
+    <string name="posting_title">Заголовок (title)</string>
+    <string name="posting_slug">Описание (slug)</string>
+    <string name="posting_content">Содержимое (сontent)</string>
+    <string name="posting_excerpt">Выдержка (excerpt)</string>
+    <string name="posting_publish">Опубликовать</string>
+    <string name="posting_comments">Комментарии</string>
+    <string name="posting_pings">Пинги</string>
+    <string name="posting_sticky">Липкий (sticky)</string>
+    <string name="posting_empty_fild">Поле Заголовок или Содерживое пустое</string>
+    <string name="posting_edit_button">ИЗМЕНИТЬ</string>
+
+    <string name="menu_delete">Удалить</string>
+    <string name="menu_open_in_browser">Открыть в браузере</string>
+    <string name="menu_refresh">Обновить</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_share">Поделиться</string>
+    <string name="menu_done">Готово</string>
+    <string name="menu_save">Сохранить</string>
+
+    <string name="delete_dialog_title">Вы уверены?</string>
+    <string name="delete_dialog_message">Объект будет помещен в карзину</string>
+    <string name="delete_generaly_dialog_message">Объект будет удален</string>
+
+    <string name="yes_button">ДА</string>
+    <string name="no_button">НЕТ</string>
+
+    <string name="check_internet">Проверьте подключение к интернету</string>
+    <string name="check_network">Проверьте подключение к сети</string>
+    <string name="bad_url_or_name">Неправельный URL или имя</string>
+    <string name="bad_title_or_content">Неправельный заголовок или содержимое</string>
+    <string name="canceled_connaction">Подключение сброшено</string>
+    <string name="connaction_error">Ошибка подключения</string>
+    <string name="content_updated">Содержимое могло измениться</string>
+    <string name="refresh_button">ОБНОВИТЬ</string>
+    <string name="next_button">СЛЕДУЮЩИЙ</string>
+
+    <string name="loading">Загрузка...</string>
+    <string name="search">Поиск</string>
+
+    <string name="status">Статус</string>
+    <string name="status_auto">Автоматически</string>
+    <string name="status_publish">Опубликовано (published)</string>
+    <string name="status_private">Личный (private)</string>
+    <string name="status_pending">В ожидании (pending)</string>
+    <string name="status_draft">Черновик (draft)</string>
+    <string name="status_trash">В карзине (trash)</string>
+    <string name="status_future">Будет опубликовно (future)</string>
+    <string name="status_date">Дата</string>
+
+    <string name="status_prompt">Выберете статус</string>
+</resources>

@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Post Editor</string>
+
+    <string name="title_activity_activity_accounting">ActivityAccounting</string>
+    <string name="title_activity_activity_posts">ActivityPosts</string>
+    <string name="title_activity_activity_posting">ActivityPosting</string>
+
+    <string name="accounts">Accounts</string>
+    <string name="accounting">Accounting</string>
+    <string name="post_editor">Post Editor</string>
+    <string name="posts">Posts</string>
+    <string name="posting">Posting</string>
+    <string name="code_editor">Code Editor</string>
+
+    <string name="connaction_name">Name of connaction</string>
+    <string name="connaction_url">URL of connaction</string>
+    <string name="connaction_load_posts">Load posts</string>
+    <string name="connaction_load_pages">Load pages</string>
+    <string name="connaction_other_settings">Other settings (optional) </string>
+    <string name="connaction_login">Login</string>
+    <string name="connaction_password">Password</string>
+    <string name="connaction_show_pwd">Show</string>
+    <string name="connaction_use_auth">Use authentication</string>
+
+    <string name="posting_title">Title</string>
+    <string name="posting_slug">Slug</string>
+    <string name="posting_content">Content</string>
+    <string name="posting_excerpt">Excerpt</string>
+    <string name="posting_publish">Publish</string>
+    <string name="posting_comments">Comments</string>
+    <string name="posting_pings">Pings</string>
+    <string name="posting_sticky">Sticky</string>
+    <string name="posting_empty_fild">Fild Title or Content is empty</string>
+    <string name="posting_edit_button">EDIT</string>
+
+    <string name="menu_delete">Delete</string>
+    <string name="menu_open_in_browser">Open in browser</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_done">Done</string>
+    <string name="menu_save">Save</string>
+
+    <string name="delete_dialog_title">Are you sure?</string>
+    <string name="delete_dialog_message">The object will be moved to cart</string>
+    <string name="delete_generaly_dialog_message">The object will be deleted</string>
+
+    <string name="yes_button">YES</string>
+    <string name="no_button">NO</string>
+
+    <string name="check_internet">Check your internet connaction</string>
+    <string name="check_network">Check your network connaction</string>
+    <string name="bad_url_or_name">Bad URL or name</string>
+    <string name="canceled_connaction">Connaction canceled</string>
+    <string name="connaction_error">Connaction error</string>
+    <string name="content_updated">Content can be updated</string>
+    <string name="refresh_button">REFRESH</string>
+    <string name="next_button">NEXT</string>
+
+    <string name="loading">Loading...</string>
+    <string name="search">Search</string>
+
+    <string name="status">Status</string>
+    <string name="status_auto">Auto</string>
+    <string name="status_publish">Published</string>
+    <string name="status_private">Private</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_draft">Draft</string>
+    <string name="status_trash">Trash</string>
+    <string name="status_future">Future</string>
+    <string name="status_date">Date</string>
+
+    <string name="status_prompt">Choose the status</string>
+    <string-array name="statuses">
+        <item>publish</item>
+        <item>future</item>
+        <item>draft</item>
+        <item>pending</item>
+        <item>private</item>
+    </string-array>
+
+</resources>

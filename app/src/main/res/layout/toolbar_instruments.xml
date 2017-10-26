@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorPrimary"
+            android:elevation="@dimen/toolbar_instruments_elevation"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/undoBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_undo_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/redoBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_redo_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/saveBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_save_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/browsBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_open_in_browser_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/tagBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_tag" />
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/locBut"-->
+            <!--android:layout_width="@dimen/toolbar_button_width"-->
+            <!--android:layout_height="@dimen/toolbar_button_height"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/ColorPrimary"-->
+            <!--android:src="@drawable/ic_place_white_24dp" />-->
+
+            <ImageButton
+                android:id="@+id/boldBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_bold_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/italicBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_italic_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/underlinedBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_underlined_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/strikethroughBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_strikethrough_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/linkBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_insert_link_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/quoteBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_quote_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/formatBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_font_download_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/numlistBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_list_numbered_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/bullistBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_format_list_bulleted_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/imgBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_insert_photo_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/videoBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_videocam_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/audioBut"
+                android:layout_width="@dimen/toolbar_instruments_button_width"
+                android:layout_height="@dimen/toolbar_instruments_button_height"
+                android:layout_weight="1"
+                android:background="@color/ColorPrimary"
+                android:src="@drawable/ic_audiotrack_white_24dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="name.z_dev.peditor.PEActivity">
+    <item
+        android:id="@+id/pingDelete"
+        android:orderInCategory="100"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/pingOpen"
+        android:orderInCategory="100"
+        android:title="@string/menu_open_in_browser"
+        android:icon="@drawable/ic_open_in_browser_white_24dp"
+        app:showAsAction="always" />
+</menu>
